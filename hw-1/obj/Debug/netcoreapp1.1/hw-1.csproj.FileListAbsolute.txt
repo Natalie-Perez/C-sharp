@@ -1,0 +1,8 @@
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\bin\Debug\netcoreapp1.1\hw-1.deps.json
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\bin\Debug\netcoreapp1.1\hw-1.runtimeconfig.json
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\bin\Debug\netcoreapp1.1\hw-1.runtimeconfig.dev.json
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\bin\Debug\netcoreapp1.1\hw-1.dll
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\bin\Debug\netcoreapp1.1\hw-1.pdb
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\obj\Debug\netcoreapp1.1\hw-1.AssemblyInfo.cs
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\obj\Debug\netcoreapp1.1\hw-1.dll
+c:\Users\Natalie\Google Drive\Programming Learning\C# Track - CS50 Track\hw-1\obj\Debug\netcoreapp1.1\hw-1.pdb
