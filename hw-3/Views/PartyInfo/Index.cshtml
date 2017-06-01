@@ -1,0 +1,71 @@
+@model partyInfo
+
+@{
+    ViewData["Title"] = "Party Info";
+}
+
+<div class="venue">
+    <div class="hotel">
+        <h1>Juvia</h1>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14369.564150841621!2d-80.1403404!3d25.7906704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53dc75ea5d7e502b!2sJuvia!5e0!3m2!1sen!2sus!4v1496077059912" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="date">
+    <h2>Saturday, June 10th at 8pm</h2>
+</div>
+
+<section class="guests">
+
+    @{
+        if(@ViewData["guestName"].ToString().Equals("")) {
+            <form asp-action="Index" asp-controller="PartyInfo">
+                <legend>Register</legend>
+
+                <div class="form-group">
+                    <label asp-for="guestName">Please enter your name: </label>
+                    <input asp-for="guestName" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="guestPhone">Please enter your number: </label>
+                    <input asp-for="guestPhone" type="tel" placeholder="Number">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        
+            }
+            else {
+                <h2>Thank you @ViewData["guestName"] </h2>
+                <p>You have been registered!</p>
+            }
+            <div class="guestList"> 
+                <h2 class="centerText">Guest List</h2>
+                <table class="table">
+                    <th>Name</th>
+                    <th>Phone</th>
+                    
+                    <tr>
+                        <td>@ViewData["guestName"]</td>
+                        <td>@ViewData["guestPhone"]</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Smith</td>
+                        <td>305-555-5555</td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca Rodriguez</td>
+                        <td>786-123-5555</td>
+                    </tr>
+                    <tr>
+                        <td>Adriana Garcia</td>
+                        <td>305-555-1234</td>
+                    </tr>
+                </table>
+                
+            </div>
+     }
+</section>

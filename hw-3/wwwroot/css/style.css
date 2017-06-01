@@ -1,0 +1,27 @@
+.hotel {
+    padding: 30px 200px;
+}
+
+.guests {
+    margin-top: 50px;
+}
+
+.date {
+    padding-left: 100px;
+}
+
+.carousel-inner .firstImg {
+    padding-left: 200px;
+}
+
+.carousel-inner .lastImg {
+    padding-left: 200px;
+}
+
+.home {
+    text-align: center;
+}
+
+.guestList .centerText {
+    text-align: center;
+}

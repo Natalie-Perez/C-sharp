@@ -1,0 +1,46 @@
+﻿@model Message
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+@{
+    if(@ViewData["From"].ToString().Equals("")) {
+        <form asp-action="Contact" asp-controller="Home">
+            <legend>Contact Us</legend>
+
+            <div class="form-group">
+                <label asp-for="from">Please enter your name: </label>
+                <input asp-for="from" placeholder="Name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label asp-for="email">Please enter your email: </label>
+                <input asp-for="email" placeholder="Email Address" class="form-control">
+            </div>
+
+            <label asp-for="body">Please write your message: </label>
+            <textarea asp-for="body" class="form-control" rows="3"> </textarea>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+    }
+    else {
+        <h2>Message from: @ViewData["From"] </h2>
+        <blockquote>@ViewData["Body"]</blockquote>
+    }
+}
